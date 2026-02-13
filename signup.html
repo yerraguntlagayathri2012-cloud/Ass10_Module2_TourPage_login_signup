@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ContactUs" content="Contact Details" />
+    <title>ContactUS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      .footerbg {
+        background-color: goldenrod;
+      }
+      a:hover {
+        background-color: goldenrod;
+        font-size: 30px;
+      }
+      .required
+      {
+        color: red;
+      }
+    </style>
+   
+  </head>
+  <body>
+     <nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid justify-content-start">
+    
+    <a class="navbar-brand" href="https://www.facebook.com/gtholidays/">
+      <img src="Images/facebook (1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+     <a class="navbar-brand" href="https://www.instagram.com/gtholidays.in/">
+      <img src="Images/circle-cropped (1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">       
+    </a>
+    <a class="navbar-brand" href="mailto:mail@gsholidays.in">mailto:mail@gsholidays.in</a>
+  </div></nav>
+   <!-- Navigation controls -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 56px" >
+        <div class="container">
+            <a href="" class="navbar-brand">GS Holiday</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto text-white">
+                    <li class="nav-item"><a class="nav-link fs-5" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="Features.Html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="Destinations.html">Destination</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="Contact.html">Contact Us</a></li>
+                     <li class="nav-item"><a class="nav-link fs-5" href="index.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="signup.html">signUp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     
+ 
+  
+    <div class="container my-5 p-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <form id="signupform" class="border p-4 rounded shadow-sm">
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="">Full Name<span class="required">*</span></label>
+                <input class="form-control" name="fullName" id="FName" placeholder="Enter Your Name" type="text" required />
+              </div>
+               <div class="error-message" id="fullNameError" style="display: none;"></div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="">Email  <span class="required">*</span></label>
+                <input class="form-control" name="email" id="email"   placeholder="enter.email@example.com" type="email" required />
+              </div>
+               <div class="error-message" id="emailError" style="display: none;"></div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="">Phone No<span class="required">*</span></label>
+                <input class="form-control" id="PhoneNo" name="phone" 
+                        placeholder="Enter 10-digit mobile number"
+                        maxlength="10" type="number" required />
+              </div>
+               <div class="error-message" id="phoneError" style="display: none;"></div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="">City<span class="required">*</span></label>
+                <input class="form-control" id="City" type="text"     name="city" 
+                        placeholder="Enter your city" required />
+              </div>
+               <div class="error-message" id="locationError" style="display: none;"></div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="">Password<span class="required">*</span></label>
+                <input class="form-control" id="Password" type="password" name="Password" placeholder="At least 8 characters, letters & numbers" required />
+                <input type="checkbox" id="CBPassword" > Show Password
+              </div>
+              <div class="error-message" id="passwordError" style="display: none;"></div>
+             <!--   /////////////// ////////////////////  -->
+              <!-- <button type="button" onclick="togglePassword"  >click to show password</button> -->
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="">Confirm Password<span class="required">*</span></label>
+                <input class="form-control" id="CPassword" type="password"  name="confirmPassword" 
+                            placeholder="Re-enter your password"  required />
+                 <input type="checkbox" id="CBcPassword" > Show Password
+              </div>
+              <div class="error-message" id="confirmPasswordError" style="display: none;"></div>
+               <!--   /////////////// ////////////////////  -->
+              <!-- <button type="button" class="toggle-password" data-target="CPassword">Click to Show password</button> -->
+            </div>
+
+            <!-- <div class="d-grid gap-2"> -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg fw-bold">Create Account</button>
+                
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
